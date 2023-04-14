@@ -1,0 +1,7 @@
+{
+  "name": "lucky-wheel",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
