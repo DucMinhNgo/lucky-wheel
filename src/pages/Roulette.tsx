@@ -1,9 +1,10 @@
 import { IonContent, IonHeader, IonPage, IonRefresher, IonRefresherContent, IonTitle, IonToolbar, RefresherEventDetail } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
+import WheelBoard from '../components/Home/WheelBoard';
 import WheelButton from '../components/Home/WheelButton';
-import './Tab1.css';
+import './Roulette.css';
 
-const Tab1: React.FC = () => {
+const Roulette: React.FC = () => {
   function handleRefresh(event: CustomEvent<RefresherEventDetail>) {
     setTimeout(() => {
       // Any calls to load data go here
@@ -15,7 +16,7 @@ const Tab1: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 1</IonTitle>
+          <IonTitle>Roulette</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -24,15 +25,13 @@ const Tab1: React.FC = () => {
         </IonRefresher>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Tab 1</IonTitle>
+            <IonTitle size="large">Roulette 1</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <div className="container">
-          <WheelButton />
-        </div>
+        <WheelBoard />
       </IonContent>
     </IonPage>
-  );
-};
+  )
+}
 
-export default Tab1;
+export default Roulette;

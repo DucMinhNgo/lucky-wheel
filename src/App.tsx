@@ -33,6 +33,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Roulette from './pages/Roulette';
 
 setupIonicReact();
 
@@ -44,8 +45,10 @@ const App: React.FC = () => (
           <Route exact path="/tab1">
             <Tab1 />
           </Route>
+          <Route exact path="/roulette">
+          </Route>
           <Route exact path="/tab2">
-            <Tab2 />
+            <Roulette />
           </Route>
           <Route path="/tab3">
             <Tab3 />
